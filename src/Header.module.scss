@@ -1,0 +1,32 @@
+@use "variables" as v;
+.Header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: v.$primary1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 v.$smallSpace black;
+  padding: v.$smallSpace;
+  .Links {
+    margin-left: auto;
+  }
+  button {
+    background-color: #0000;
+    padding: v.$bigSpace;
+    color: white;
+    font-size: v.$fontSize2;
+    border: none;
+    text-decoration-color: #0000;
+    &:hover {
+      background-color: v.$primary2;
+    }
+    cursor: pointer;
+    transition: v.$transition;
+  }
+  .Current {
+    text-decoration: underline;
+    text-underline-offset: v.$smallSpace;
+  }
+}
