@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tishare-docs/static/css/main.b009fead.chunk.css",
+    "main.js": "/tishare-docs/static/js/main.05bded57.chunk.js",
+    "main.js.map": "/tishare-docs/static/js/main.05bded57.chunk.js.map",
+    "runtime-main.js": "/tishare-docs/static/js/runtime-main.40391434.js",
+    "runtime-main.js.map": "/tishare-docs/static/js/runtime-main.40391434.js.map",
+    "static/js/2.df725a6d.chunk.js": "/tishare-docs/static/js/2.df725a6d.chunk.js",
+    "static/js/2.df725a6d.chunk.js.map": "/tishare-docs/static/js/2.df725a6d.chunk.js.map",
+    "static/js/3.e9c9f90b.chunk.js": "/tishare-docs/static/js/3.e9c9f90b.chunk.js",
+    "static/js/3.e9c9f90b.chunk.js.map": "/tishare-docs/static/js/3.e9c9f90b.chunk.js.map",
+    "index.html": "/tishare-docs/index.html",
+    "static/css/main.b009fead.chunk.css.map": "/tishare-docs/static/css/main.b009fead.chunk.css.map",
+    "static/js/2.df725a6d.chunk.js.LICENSE.txt": "/tishare-docs/static/js/2.df725a6d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40391434.js",
+    "static/js/2.df725a6d.chunk.js",
+    "static/css/main.b009fead.chunk.css",
+    "static/js/main.05bded57.chunk.js"
+  ]
+}
