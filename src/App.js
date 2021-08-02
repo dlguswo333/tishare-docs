@@ -1,5 +1,6 @@
 import { BrowserRouter, Route } from 'react-router-dom'
 import Main from './Main'
+import Download from './Download'
 import Toturial from './Toturial'
 import Faq from './Faq'
 import classes from './App.module.scss'
@@ -14,6 +15,7 @@ function App() {
       <div className={classes.App}>
         <Header lang={lang} setLang={setLang} />
         <Route path='/' exact={true} component={Main} />
+        <Route path='/download' exact={true} component={Download} />
         <Route path='/toturial' exact={true} component={Toturial} />
         <Route path='/faq' exact={true} component={Faq} />
       </div>

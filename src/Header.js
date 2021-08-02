@@ -43,6 +43,9 @@ function Header({ lang, setLang }) {
         <Link to='/'>
           <button className={pathname === '/' ? classes.Current : ''} onClick={() => { setPathname('/') }}>HOME</button>
         </Link>
+        <Link to='/download'>
+          <button className={pathname === '/download' ? classes.Current : ''} onClick={() => { setPathname('/download') }}>DOWNLOAD</button>
+        </Link>
         <Link to='toturial'>
           <button className={pathname === '/toturial' ? classes.Current : ''} onClick={() => { setPathname('/toturial') }}>TOTURIAL</button>
         </Link>
