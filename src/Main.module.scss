@@ -1,21 +1,95 @@
-@use "variables" as v;
+@use "variables" as *;
 
 .Main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & > div {
+    margin-top: 50px;
+  }
   .Heading {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: v.$fontSize4;
-    font-weight: bold;
-    img {
-      max-width: 1000px;
-      width: 90%;
-      border-radius: v.$smallSpace;
-      border: 1px solid v.$grey_9;
-      box-shadow: 0 4px 4px v.$grey_9;
+    span {
+      font-size: $fontSize4;
+      font-weight: bold;
+    }
+    .ImgContainer {
+      margin-top: $bigSpace;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: $screenSep * 0.9;
+      @media screen and (max-width: $screenSep) {
+        width: 90%;
+      }
+      img {
+        border-radius: $smallSpace;
+        box-shadow: 0px 4px 4px $grey_6;
+        transition: $transition;
+        bottom: 0;
+        &:hover {
+          bottom: $mediumSpace;
+        }
+      }
+      .DesktopSampleImg {
+        position: relative;
+        max-width: 90%;
+      }
+      .MobileSampleImg {
+        position: absolute;
+        right: 10%;
+        max-height: 90%;
+      }
+    }
+  }
+  .Grid {
+    $space: 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space;
+    padding: $space;
+    background-color: $primary1;
+    @media screen and (max-width: $screenSep) {
+      grid-template-columns: 1fr;
+    }
+    .GridItem {
+      $innerSpace: 20px;
+      min-width: 0;
+      min-height: 0;
+      position: relative;
+      top: 0;
+      transition: $transition;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 2px;
+      padding: $innerSpace;
+      background-color: white;
+      box-shadow: 0 2px 4px $grey_6;
+      &:hover {
+        top: $smallSpace * -1;
+      }
+      .ItemTitle {
+        font-size: $fontSize3;
+        font-weight: bold;
+      }
+      .ItemImg {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 90%;
+      }
+      .ItemBody {
+        font-size: $fontSize2;
+        color: $grey_6;
+      }
     }
   }
 }

@@ -9,6 +9,7 @@
   align-items: center;
   box-shadow: 0 0 v.$smallSpace black;
   padding: v.$smallSpace;
+  z-index: 100;
   .Links {
     margin-left: auto;
   }
