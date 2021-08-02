@@ -1,11 +1,13 @@
 import classes from './Main.module.scss'
+import { useTranslation } from 'react-i18next'
 
 function Main() {
+  const [t, _] = useTranslation()
   return (
     <div className={classes.Main}>
       <div className={classes.Heading}>
-        <span>Share Files and Folder</span>
-        <span>with tiShare.</span>
+        <span>{t('main.heading1')}</span>
+        <span>{t('main.heading2')}</span>
         <div className={classes.ImgContainer}>
           <img src='/desktop-run.png' className={classes.DesktopSampleImg} alt='desktop-run' />
           <img src='/mobile-run.png' className={classes.MobileSampleImg} alt='mobile-run' />
@@ -13,20 +15,26 @@ function Main() {
       </div>
       <div className={classes.Grid}>
         <div className={classes.GridItem}>
-          <span className={classes.ItemTitle}>Share in Local Network</span>
-          <span className={classes.ItemBody}>Open yourself in Wi-Fi routers or Routers. Other devices will be able to see you.</span>
+          {/* Share in Local Network */}
+          <span className={classes.ItemTitle}>{t('main.grid1Title')}</span>
+          <img className={classes.ItemImg} src='/main-local-network.svg' alt='platforms.svg' />
+          <span className={classes.ItemBody}>{t('main.grid1Body')}</span>
         </div>
         <div className={classes.GridItem}>
-          <span className={classes.ItemTitle}>Run Cross Platform</span>
-          <span className={classes.ItemBody}>Open yourself in Wi-Fi routers or Routers. Other devices will be able to see you.</span>
+          {/* Run Cross Platform */}
+          <span className={classes.ItemTitle}>{t('main.grid2Title')}</span>
+          <img className={classes.ItemImg} src='/platforms.svg' alt='platforms.svg' />
+          <span className={classes.ItemBody}>{t('main.grid2Body')}</span>
         </div>
         <div className={classes.GridItem}>
-          <span className={classes.ItemTitle}>Share both Files and Folders</span>
-          <span className={classes.ItemBody}>Open yourself in Wi-Fi routers or Routers. Other devices will be able to see you.</span>
+          {/* Share both Files and Folders */}
+          <span className={classes.ItemTitle}>{t('main.grid3Title')}</span>
+          <span className={classes.ItemBody}>{t('main.grid3Body')}</span>
         </div>
         <div className={classes.GridItem}>
-          <span className={classes.ItemTitle}>Multiple Tasks Support</span>
-          <span className={classes.ItemBody}>Open yourself in Wi-Fi routers or Routers. Other devices will be able to see you.</span>
+          {/* Multiple Tasks Support */}
+          <span className={classes.ItemTitle}>{t('main.grid4Title')}</span>
+          <span className={classes.ItemBody}>{t('main.grid4Body')}</span>
         </div>
       </div>
     </div>

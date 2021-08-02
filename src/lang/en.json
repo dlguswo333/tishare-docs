@@ -1,0 +1,15 @@
+{
+  "lang": "English",
+  "main": {
+    "heading1": "Share Files and Folders",
+    "heading2": "with tiShare.",
+    "grid1Title": "Share in Local Network",
+    "grid1Body": "Open yourself in the local networks such as Wi-Fi or Routers. Other devices will be able to see you.",
+    "grid2Title": "Run Cross Platform",
+    "grid2Body": "tiShare supports multiple platforms: Windows, Linux, and Android.",
+    "grid3Title": "Share both Files and Folders",
+    "grid3Body": "with tiShare, you can share folders, not only files.",
+    "grid4Title": "Multiple Transfer Tasks Support",
+    "grid4Body": "Concurrently send and receives files with many other devices at the same time."
+  }
+}

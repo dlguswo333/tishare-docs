@@ -51,7 +51,7 @@
     $space: 50px;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
     gap: $space;
     padding: $space;
     background-color: $primary1;
@@ -71,22 +71,26 @@
       border-radius: 2px;
       padding: $innerSpace;
       background-color: white;
-      box-shadow: 0 2px 4px $grey_6;
+      box-shadow: 0 4px 4px $grey_6;
       &:hover {
         top: $smallSpace * -1;
+        box-shadow: 0 4px calc(4px + #{$smallSpace}) $grey_6;
+      }
+      & > * {
+        margin-bottom: 10px;
       }
       .ItemTitle {
         font-size: $fontSize3;
         font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $grey_9;
       }
       .ItemImg {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        max-width: 90%;
+        margin: auto;
+        max-width: 80%;
       }
       .ItemBody {
+        margin-top: auto;
         font-size: $fontSize2;
         color: $grey_6;
       }

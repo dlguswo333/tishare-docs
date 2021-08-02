@@ -4,12 +4,15 @@ import Toturial from './Toturial'
 import Faq from './Faq'
 import classes from './App.module.scss'
 import Header from './Header'
+import { useState } from 'react'
 
 function App() {
+  const [lang, setLang] = useState(window.localStorage.getItem('preferredLang'))
+
   return (
     <BrowserRouter>
       <div className={classes.App}>
-        <Header />
+        <Header lang={lang} setLang={setLang} />
         <Route path='/' exact={true} component={Main} />
         <Route path='/toturial' exact={true} component={Toturial} />
         <Route path='/faq' exact={true} component={Faq} />

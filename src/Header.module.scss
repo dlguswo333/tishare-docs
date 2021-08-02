@@ -1,33 +1,38 @@
-@use "variables" as v;
+@use "variables" as *;
 .Header {
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: v.$primary1;
+  background-color: $primary1;
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: 0 0 v.$smallSpace black;
-  padding: v.$smallSpace;
+  box-shadow: 0 0 $smallSpace black;
+  padding: $smallSpace;
   z-index: 100;
+  .SelectLang {
+    padding: $smallSpace;
+    border-radius: $smallSpace;
+    font-size: $fontSize2;
+  }
   .Links {
     margin-left: auto;
   }
   button {
     background-color: #0000;
-    padding: v.$bigSpace;
+    padding: $bigSpace;
     color: white;
-    font-size: v.$fontSize2;
+    font-size: $fontSize2;
     border: none;
     text-decoration-color: #0000;
-    &:hover {
-      background-color: v.$primary2;
+    &:hor {
+      background-color: $primary2;
     }
     cursor: pointer;
-    transition: v.$transition;
+    transition: $transition;
   }
   .Current {
     text-decoration: underline;
-    text-underline-offset: v.$smallSpace;
+    text-underline-offset: $smallSpace;
   }
 }
