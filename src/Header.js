@@ -41,7 +41,8 @@ function Header({ lang, setLang }) {
           {getLangs()}
         </select>
         <Link to='/'>
-          <button className={pathname === '/' ? classes.Current : ''} onClick={() => { setPathname('/') }}>HOME</button>
+          {/* Because of subdomain problem, the below path checking has to be like that... */}
+          <button className={pathname === '/' || pathname === '/tishare-docs/' ? classes.Current : ''} onClick={() => { setPathname('/') }}>HOME</button>
         </Link>
         <Link to='/download'>
           <button className={pathname === '/download' ? classes.Current : ''} onClick={() => { setPathname('/download') }}>DOWNLOAD</button>

@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
   ],
   fallbackLng: ['en', 'ko'],
   lng: localStorage.getItem('preferredLang') || 'en',
-  debug: true
+  debug: false
 }, (err) => {
   console.log('loaded i18n')
   if (err)
