@@ -6,12 +6,13 @@ import Faq from './Faq'
 import classes from './App.module.scss'
 import Header from './Header'
 import { useState } from 'react'
+import { basename } from './def.json'
 
 function App() {
   const [lang, setLang] = useState(window.localStorage.getItem('preferredLang'))
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <div className={classes.App}>
         <Header lang={lang} setLang={setLang} />
         <Route path='/' exact={true} component={Main} />

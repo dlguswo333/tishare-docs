@@ -35,7 +35,7 @@ function Header({ lang, setLang }) {
 
   return (
     <header className={classes.Header}>
-      <img src='/logo256.png' width='32px' alt='tiShare' />
+      <img src={'/tishare-docs/logo256.png'} width='32px' alt='tiShare' />
       <div className={classes.Links}>
         <select defaultValue={lang} onChange={(e) => { setLang(e.target.value) }} className={classes.SelectLang}>
           {getLangs()}
