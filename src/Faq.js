@@ -1,6 +1,10 @@
 import classes from './Faq.module.scss'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
+import Accordion from '@material-ui/core/Accordion'
+import AccordionSummary from '@material-ui/core/AccordionSummary'
+import AccordionDetails from '@material-ui/core/AccordionDetails'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 function Faq() {
   // eslint-disable-next-line
@@ -22,19 +26,22 @@ function Faq() {
 
   function getItems() {
     const ret = []
-    console.log('getItem')
     for (let i = 1; i <= Object.keys(items).length; i++) {
       ret.push(
-        <div className={classes.Item} key={i}>
-          <div className={classes.ItemTitle} onClick={() => { toggleShow(i) }}>
-            {t('faq.items.' + i + '.title')}
-          </div>
-          <div className={classes.ItemBody + (show[i] ? ' ' + classes.Show : '')}>
-            <span>
+        <Accordion key={i} className={classes.Item}>
+          <AccordionSummary className={classes.ItemTitle}
+            expandIcon={<ExpandMoreIcon />}
+          >
+            <span className={classes.ItemTitle} onClick={() => { toggleShow(i) }}>
+              {t('faq.items.' + i + '.title')}
+            </span>
+          </AccordionSummary>
+          <AccordionDetails className={classes.ItemBody}>
+            <span className={classes.ItemBody}>
               {t('faq.items.' + i + '.body')}
             </span>
-          </div>
-        </div>
+          </AccordionDetails>
+        </Accordion>
       )
     }
     return ret
