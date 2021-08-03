@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next'
  * @param {Function} props.setLang
  */
 function Header({ lang, setLang }) {
+  // eslint-disable-next-line
   const [t, i18n] = useTranslation()
   const [pathname, setPathname] = useState(window.location.pathname)
 
@@ -42,14 +43,11 @@ function Header({ lang, setLang }) {
         </select>
         <Link to='/'>
           {/* Because of subdomain problem, the below path checking has to be like that... */}
-          <button className={pathname === '/' || pathname === '/tishare-docs/' ? classes.Current : ''} onClick={() => { setPathname('/') }}>HOME</button>
+          <button className={pathname === '/' || pathname === '/tishare-docs' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs') }}>HOME</button>
         </Link>
-        <Link to='/download'>
-          <button className={pathname === '/download' ? classes.Current : ''} onClick={() => { setPathname('/download') }}>DOWNLOAD</button>
-        </Link>
-        <Link to='toturial'>
+        {/* <Link to='toturial'>
           <button className={pathname === '/toturial' ? classes.Current : ''} onClick={() => { setPathname('/toturial') }}>TOTURIAL</button>
-        </Link>
+        </Link> */}
         <Link to='/faq'>
           <button className={pathname === '/faq' ? classes.Current : ''} onClick={() => { setPathname('/faq') }}>FAQ</button>
         </Link>
