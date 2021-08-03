@@ -1,6 +1,7 @@
 @use "variables" as *;
 
 .Main {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: onLoad $longInterval linear forwards;
     span {
       text-align: center;
       font-size: $fontSize4;
@@ -141,5 +143,14 @@
         color: $grey_6;
       }
     }
+  }
+}
+
+@keyframes onLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
