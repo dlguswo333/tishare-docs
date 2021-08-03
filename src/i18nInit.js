@@ -19,9 +19,8 @@ i18n.use(initReactI18next).init({
   lng: localStorage.getItem('preferredLang') || 'en',
   debug: false
 }, (err) => {
-  console.log('loaded i18n')
   if (err)
-    console.log(err)
+    console.log('i18n init error', err)
 })
 
 export default i18n

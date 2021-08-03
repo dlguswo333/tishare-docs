@@ -33,7 +33,7 @@ function Header({ lang, setLang }) {
     }
     return ret
   }
-
+  console.log(pathname)
   return (
     <header className={classes.Header}>
       <img src={'/tishare-docs/logo256.png'} width='32px' alt='tiShare' />
@@ -41,15 +41,14 @@ function Header({ lang, setLang }) {
         <select defaultValue={lang} onChange={(e) => { setLang(e.target.value) }} className={classes.SelectLang}>
           {getLangs()}
         </select>
-        <Link to='/'>
-          {/* Because of subdomain problem, the below path checking has to be like that... */}
-          <button className={pathname === '/' || pathname === '/tishare-docs' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs') }}>HOME</button>
+        <Link to='/tishare-docs'>
+          <button className={pathname === '/tishare-docs' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs') }}>HOME</button>
         </Link>
         {/* <Link to='toturial'>
           <button className={pathname === '/toturial' ? classes.Current : ''} onClick={() => { setPathname('/toturial') }}>TOTURIAL</button>
         </Link> */}
-        <Link to='/faq'>
-          <button className={pathname === '/faq' ? classes.Current : ''} onClick={() => { setPathname('/faq') }}>FAQ</button>
+        <Link to='/tishare-docs/faq'>
+          <button className={pathname === '/tishare-docs/faq' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs/faq') }}>FAQ</button>
         </Link>
       </div>
     </header>
