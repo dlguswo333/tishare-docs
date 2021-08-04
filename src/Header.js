@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Header.module.scss'
 import { useTranslation } from 'react-i18next'
@@ -7,11 +7,11 @@ import { useTranslation } from 'react-i18next'
  * @param {Object} props
  * @param {string} props.lang
  * @param {Function} props.setLang
+ * @param {string} props.pathname
+ * @param {Function} props.setPathname
  */
-function Header({ lang, setLang }) {
-  // eslint-disable-next-line
-  const [t, i18n] = useTranslation()
-  const [pathname, setPathname] = useState(window.location.pathname)
+function Header({ lang, setLang, pathname, setPathname }) {
+  const [, i18n] = useTranslation()
 
   useEffect(() => {
     if (lang && i18n.languages.includes(lang)) {
@@ -24,6 +24,11 @@ function Header({ lang, setLang }) {
       i18n.changeLanguage('en')
     }
   }, [lang, i18n])
+
+  useEffect(() => {
+    if (!pathname.endsWith('/'))
+      setPathname(pathname + '/')
+  }, [pathname, setPathname])
 
   function getLangs() {
     const langs = i18n.languages
@@ -41,12 +46,12 @@ function Header({ lang, setLang }) {
         <select defaultValue={lang} onChange={(e) => { setLang(e.target.value) }} className={classes.SelectLang}>
           {getLangs()}
         </select>
-        <Link to='/tishare-docs'>
+        <Link to='/tishare-docs/'>
           {/* TODO Solve underline not appear at page refresh. */}
-          <button className={pathname === '/tishare-docs/' || pathname === '/tishare-docs' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs') }}>HOME</button>
+          <button className={pathname === '/tishare-docs/' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs') }}>HOME</button>
         </Link>
-        <Link to='/tishare-docs/faq'>
-          <button className={pathname === '/tishare-docs/faq' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs/faq') }}>FAQ</button>
+        <Link to='/tishare-docs/faq/'>
+          <button className={pathname === '/tishare-docs/faq/' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs/faq') }}>FAQ</button>
         </Link>
       </div>
     </header>
