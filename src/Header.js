@@ -42,11 +42,9 @@ function Header({ lang, setLang }) {
           {getLangs()}
         </select>
         <Link to='/tishare-docs'>
-          <button className={pathname === '/tishare-docs' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs') }}>HOME</button>
+          {/* TODO Solve underline not appear at page refresh. */}
+          <button className={pathname === '/tishare-docs/' || pathname === '/tishare-docs' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs') }}>HOME</button>
         </Link>
-        {/* <Link to='toturial'>
-          <button className={pathname === '/toturial' ? classes.Current : ''} onClick={() => { setPathname('/toturial') }}>TOTURIAL</button>
-        </Link> */}
         <Link to='/tishare-docs/faq'>
           <button className={pathname === '/tishare-docs/faq' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs/faq') }}>FAQ</button>
         </Link>
