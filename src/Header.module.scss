@@ -19,11 +19,15 @@
     flex-direction: row;
     align-items: center;
     .LogoImg {
-      width: 32px;
+      width: $logoSize;
     }
     .MenuImg {
+      width: $logoSize + $smallSpace;
+      height: $logoSize + $smallSpace;
+      background-color: $primary1;
       margin-left: auto;
-      width: 32px;
+      padding: $smallSpace;
+      border-radius: 50%;
       cursor: pointer;
       transition: $transition;
       &:hover {

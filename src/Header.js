@@ -44,7 +44,9 @@ function Header({ lang, setLang, pathname, setPathname }) {
     <header className={classes.Header}>
       <div className={classes.Menu}>
         <img src='/tishare-docs/logo256.png' className={classes.LogoImg} alt='tiShare' />
-        <img src='/tishare-docs/menu.svg' className={classes.MenuImg} alt='menu' onClick={() => { setShowMenu((value) => !value) }} />
+        <div className={classes.MenuImg} onClick={() => { setShowMenu((value) => !value) }}>
+          <img src='/tishare-docs/menu.svg' alt='menu' />
+        </div>
       </div>
       <div className={showMenu ? classes.Links + ' ' + classes.Show : classes.Links}>
         <select defaultValue={lang} onChange={(e) => { setLang(e.target.value) }} className={classes.SelectLang}>
