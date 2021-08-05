@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Header.module.scss'
 import { useTranslation } from 'react-i18next'
@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next'
  */
 function Header({ lang, setLang, pathname, setPathname }) {
   const [, i18n] = useTranslation()
+  const [showMenu, setShowMenu] = useState(false)
 
   useEffect(() => {
     if (lang && i18n.languages.includes(lang)) {
@@ -41,8 +42,11 @@ function Header({ lang, setLang, pathname, setPathname }) {
 
   return (
     <header className={classes.Header}>
-      <img src='/tishare-docs/logo256.png' width='32px' alt='tiShare' />
-      <div className={classes.Links}>
+      <div className={classes.Menu}>
+        <img src='/tishare-docs/logo256.png' className={classes.LogoImg} alt='tiShare' />
+        <img src='/tishare-docs/menu.svg' className={classes.MenuImg} alt='menu' onClick={() => { setShowMenu((value) => !value) }} />
+      </div>
+      <div className={showMenu ? classes.Links + ' ' + classes.Show : classes.Links}>
         <select defaultValue={lang} onChange={(e) => { setLang(e.target.value) }} className={classes.SelectLang}>
           {getLangs()}
         </select>
