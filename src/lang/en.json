@@ -21,7 +21,7 @@
       },
       "2": {
         "title": "Is it secure to use tiShare in public networks?",
-        "body": "Sadly, no. tiShare is running without any server, so you can use tiShare without worrying about getting the service shut down due to server hometenance costs. However, in return, we are not able to provide resources such as SSL keys to users to encrypt files flying on the networks. We do not recommend and do not take responsibility using tiShare in public and untrusted networks: such as coffee shop Wi-Fi routers. Use tiShare only in networks with trust like your home Wi-Fi networks."
+        "body": "Sadly, no. tiShare is running without any server, so you can use tiShare without worrying about getting the service shut down due to server maintenance costs. However, in return, we are not able to provide resources such as SSL keys to users to encrypt files flying on the networks. We do not recommend and do not take responsibility using tiShare in public and untrusted networks: such as coffee shop Wi-Fi routers. Use tiShare only in networks with trust like your home Wi-Fi networks."
       }
     }
   }
