@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tishare-docs/static/css/main.5f38b663.chunk.css",
-    "main.js": "/tishare-docs/static/js/main.13e145d0.chunk.js",
-    "main.js.map": "/tishare-docs/static/js/main.13e145d0.chunk.js.map",
+    "main.css": "/tishare-docs/static/css/main.c5c410d4.chunk.css",
+    "main.js": "/tishare-docs/static/js/main.5eff12b3.chunk.js",
+    "main.js.map": "/tishare-docs/static/js/main.5eff12b3.chunk.js.map",
     "runtime-main.js": "/tishare-docs/static/js/runtime-main.263a6a93.js",
     "runtime-main.js.map": "/tishare-docs/static/js/runtime-main.263a6a93.js.map",
     "static/js/2.94391d6f.chunk.js": "/tishare-docs/static/js/2.94391d6f.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.ee54030e.chunk.js": "/tishare-docs/static/js/3.ee54030e.chunk.js",
     "static/js/3.ee54030e.chunk.js.map": "/tishare-docs/static/js/3.ee54030e.chunk.js.map",
     "index.html": "/tishare-docs/index.html",
-    "static/css/main.5f38b663.chunk.css.map": "/tishare-docs/static/css/main.5f38b663.chunk.css.map",
+    "static/css/main.c5c410d4.chunk.css.map": "/tishare-docs/static/css/main.c5c410d4.chunk.css.map",
     "static/js/2.94391d6f.chunk.js.LICENSE.txt": "/tishare-docs/static/js/2.94391d6f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.263a6a93.js",
     "static/js/2.94391d6f.chunk.js",
-    "static/css/main.5f38b663.chunk.css",
-    "static/js/main.13e145d0.chunk.js"
+    "static/css/main.c5c410d4.chunk.css",
+    "static/js/main.5eff12b3.chunk.js"
   ]
 }
