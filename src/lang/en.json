@@ -22,6 +22,14 @@
       "2": {
         "title": "Is it secure to use tiShare in public networks?",
         "body": "Sadly, no. tiShare is running without any server, so you can use tiShare without worrying about getting the service shut down due to server maintenance costs. However, in return, we are not able to provide resources such as SSL keys to users to encrypt files flying on the networks. We do not recommend and do not take responsibility using tiShare in public and untrusted networks: such as coffee shop Wi-Fi routers. Use tiShare only in networks with trust like your home Wi-Fi networks."
+      },
+      "3": {
+        "title": "How can I communicate with another device?",
+        "body": "In order for two devices to communicate, one device needs to open itself. Press the button located at main screen or Device tab to open the device to the network, and press Scan button on the other device. The opened device will show up on the list."
+      },
+      "4": {
+        "title": "Device is open but does not show up.",
+        "body": "Sometimes unknown errors happen so devices are not detected. Close and open again. Or open another device to the network."
       }
     }
   }
