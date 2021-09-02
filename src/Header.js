@@ -2,17 +2,17 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Header.module.scss'
 import { useTranslation } from 'react-i18next'
-
+import { pathnameState } from './States'
+import { useRecoilState } from 'recoil'
 /**
  * @param {Object} props
  * @param {string} props.lang
  * @param {Function} props.setLang
- * @param {string} props.pathname
- * @param {Function} props.setPathname
  */
-function Header({ lang, setLang, pathname, setPathname }) {
+function Header({ lang, setLang }) {
   const [, i18n] = useTranslation()
   const [showMenu, setShowMenu] = useState(false)
+  const [pathname, setPathname] = useRecoilState(pathnameState)
 
   useEffect(() => {
     if (lang && i18n.languages.includes(lang)) {
@@ -53,11 +53,10 @@ function Header({ lang, setLang, pathname, setPathname }) {
           {getLangs()}
         </select>
         <Link to='/tishare-docs/'>
-          {/* TODO Solve underline not appear at page refresh. */}
-          <button className={pathname === '/tishare-docs/' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs') }}>HOME</button>
+          <button className={pathname === '/tishare-docs/' ? classes.Current : ''}>HOME</button>
         </Link>
         <Link to='/tishare-docs/faq/'>
-          <button className={pathname === '/tishare-docs/faq/' ? classes.Current : ''} onClick={() => { setPathname('/tishare-docs/faq') }}>FAQ</button>
+          <button className={pathname === '/tishare-docs/faq/' ? classes.Current : ''}>FAQ</button>
         </Link>
       </div>
     </header>

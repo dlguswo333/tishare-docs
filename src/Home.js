@@ -1,11 +1,18 @@
 import classes from './Home.module.scss'
 import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { pathnameState } from './States'
+import { useRecoilState } from 'recoil'
 
 function Home() {
   // eslint-disable-next-line
   const [t, _] = useTranslation()
   const [desktopImgHover, setDesktopImgHover] = useState(false)
+  const [, setPathname] = useRecoilState(pathnameState)
+
+  useEffect(() => {
+    setPathname('/tishare-docs/')
+  }, [setPathname])
 
   return (
     <div className={classes.Home}>
