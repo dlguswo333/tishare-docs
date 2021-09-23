@@ -25,13 +25,16 @@
       width: $logoSize + $smallSpace;
       height: $logoSize + $smallSpace;
       background-color: $primary1;
+      border: none;
       margin-left: auto;
       padding: $smallSpace;
       border-radius: 50%;
       cursor: pointer;
       transition: $transition;
-      &:hover {
-        background-color: $primary2;
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-color: $primary2;
+        }
       }
       @media screen and (min-width: $screenSep) {
         display: none;
@@ -59,11 +62,13 @@
       font-size: $fontSize2;
       border: none;
       text-decoration-color: #0000;
-      &:hover {
-        background-color: $primary2;
-      }
       cursor: pointer;
       transition: $transition;
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background-color: $primary2;
+        }
+      }
     }
     .Current {
       text-decoration: underline;

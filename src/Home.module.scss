@@ -81,6 +81,11 @@
             font-size: $fontSize2;
             color: white;
             margin-top: 5px;
+            @media (hover: hover) and (pointer: fine) {
+              &:hover {
+                color: $grey_e;
+              }
+            }
           }
           & > div > img {
             margin-top: 5px;
