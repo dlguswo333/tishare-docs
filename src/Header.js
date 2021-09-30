@@ -12,7 +12,7 @@ import { useRecoilState } from 'recoil'
 function Header({ lang, setLang }) {
   const [, i18n] = useTranslation()
   const [showMenu, setShowMenu] = useState(false)
-  const [pathname, setPathname] = useRecoilState(pathnameState)
+  const [pathname,] = useRecoilState(pathnameState)
 
   useEffect(() => {
     if (lang && i18n.languages.includes(lang)) {
@@ -25,11 +25,6 @@ function Header({ lang, setLang }) {
       i18n.changeLanguage('en')
     }
   }, [lang, i18n])
-
-  useEffect(() => {
-    if (!pathname.endsWith('/'))
-      setPathname(pathname + '/')
-  }, [pathname, setPathname])
 
   function getLangs() {
     const langs = i18n.languages
@@ -53,10 +48,13 @@ function Header({ lang, setLang }) {
           {getLangs()}
         </select>
         <Link to='/tishare-docs/'>
-          <button className={pathname === '/tishare-docs/' ? classes.Current : ''}>HOME</button>
+          <button className={/^\/tishare-docs\/?$/.test(pathname) ? classes.Current : ''}>HOME</button>
         </Link>
-        <Link to='/tishare-docs/faq/'>
-          <button className={pathname === '/tishare-docs/faq/' ? classes.Current : ''}>FAQ</button>
+        <Link to='/tishare-docs/releases'>
+          <button className={pathname.startsWith('/tishare-docs/releases') ? classes.Current : ''}>Releases</button>
+        </Link>
+        <Link to='/tishare-docs/faq'>
+          <button className={pathname.startsWith('/tishare-docs/faq') ? classes.Current : ''}>FAQ</button>
         </Link>
       </div>
     </header>

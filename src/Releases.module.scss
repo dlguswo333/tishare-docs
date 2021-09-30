@@ -1,0 +1,34 @@
+@use "variables" as *;
+
+.Releases {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4px;
+  h2 {
+    margin-bottom: 0;
+  }
+  .Release {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    white-space: pre-wrap;
+    padding: 20px 10px;
+    .Title {
+      margin-bottom: 10px;
+      .Version {
+        font-size: $fontSize3;
+        font-weight: bold;
+      }
+      .Date {
+        margin-left: 10px;
+        color: $grey_6;
+      }
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $grey_9;
+    }
+    li {
+      margin: 6px 0;
+    }
+  }
+}

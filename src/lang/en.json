@@ -13,6 +13,47 @@
     "grid4Title": "Multiple Transfer Tasks Support",
     "grid4Body": "Concurrently send and receives files with multiple devices at the same time."
   },
+  "releases": {
+    "desktop": {
+      "0.3.0": {
+        "head": "tiShare Desktop v0.3.0 is now released.\nv0.3.0 focuses on improving reliability and UX.\n\nv0.3.0 contains the following bug fixes and improvements:",
+        "bullets": [
+          "Fix private IP detection algorithms.",
+          "Fix the number of processed items not incrementing for skipped items on receiver side.",
+          "Add spinner to Scan button.",
+          "Add network refresh button. Users now do not need to turn tiShare off and on to refresh network lists.",
+          "Improve navigation bar windows response speed.",
+          "Support drag and drop files and folders.",
+          "Fix and Improve miscellaneous, such as greatly reducing installation sizes."
+        ],
+        "foot": "",
+        "time": "2021-09-20"
+      },
+      "0.2.0": {
+        "head": "tiShare Desktop v0.2.0 is out.\ntiShare Desktop v0.2.0 is tested in accordance with tiShare Mobile v0.2.0.\nIt is advised to match app versions. tiShare plans to have integrated versioning in both Desktop and Mobile.\n\nv0.2.0 contains the following bug fixes and improvements:",
+        "bullets": [
+          "Add a new icon.",
+          "Improve local network detection mechanisms.",
+          "When folders are added to item list, every subitems existing at the time of clicking Send will be transferred.",
+          "Show opponent ID in top right of JobView.",
+          "Delete JobView automatically if ended by on this side, not by the opponent.",
+          "Server and Client have integrated indexing mechanisms.",
+          "Improve data transfer stabilities.",
+          "Fix a bug where even if the app is open to the network, it cannot be searched due to wrong bind address in Linux.",
+          "Fix a bug where uncompletely received files are not deleted automatically.",
+          "Fix miscellaneous bugs."
+        ],
+        "foot": "",
+        "time": "2021-08-01"
+      },
+      "0.1.0": {
+        "head": "This is initial release of tiShare.\nIt may contains some bugs.",
+        "bullets": [],
+        "foot": "",
+        "time": "2021-07-09"
+      }
+    }
+  },
   "faq": {
     "items": {
       "1": {
