@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next'
 import { pathnameState } from './States'
 import { useRecoilState } from 'recoil'
 
-function Faq() {
+function Releases() {
+  const platforms = ['desktop', 'mobile']
   const [t, i18n] = useTranslation()
   /** @type {Object.<string, {title:string, body:string}} */
   const items = i18n.getResource('en', 'translation', 'releases')
@@ -14,24 +15,25 @@ function Faq() {
     setPathname('/tishare-docs/releases')
   }, [setPathname])
 
-  function getReleases() {
-    const platforms = ['desktop', 'mobile']
-    const versions = ['0.3.0', '0.2.0', '0.1.0']
-    return versions.map((val) => getRelease(platforms[0], val))
-    // return platforms.map((platform) => versions.map((version) => getRelease(platform, version))).flat()
+  function getReleases(platform) {
+    let ret = []
+    const versions = Object.keys(items[platform])
+    ret.push(<h2 key={platform}>{platform.toUpperCase()}</h2>)
+    ret.push(...versions.map((version) => getRelease(platform, version)))
+    return ret
   }
 
   /**
+   * @param {string} platform
    * @param {string} ver
    */
   function getRelease(platform, ver) {
-    const bullets = items[platform][ver]['bullets'].map((val) => <li>{val}</li>)
-    console.log(items[platform][ver]['time'], new Date(items[platform][ver]['time']))
+    const bullets = items[platform][ver]['bullets'].map((val, ind) => <li key={ind}>{val}</li>)
     return (
-      <section className={classes.Release}>
+      <section className={classes.Release} key={platform + ver}>
         <div className={classes.Title}>
           <span className={classes.Version}>{ver}</span>
-          <span className={classes.Date}>{new Date(items[platform][ver]['time']).toLocaleDateString()}</span>
+          <span className={classes.Date}>{new Date(items[platform][ver]['time']).toLocaleDateString(i18n.languages[0])}</span>
         </div>
         {t(`releases.${platform}.${ver}.head`)}
         <ul>
@@ -42,13 +44,12 @@ function Faq() {
   }
 
   return (
-    <>
-      <div className={classes.Releases}>
-        <h2>Desktop</h2>
-        {getReleases()}
-      </div >
-    </>
+    <div className={classes.Releases}>
+      {platforms.map((platform) => (
+        <div key={platform}>{getReleases(platform)}</div>)
+      )}
+    </div>
   )
 }
 
-export default Faq
+export default Releases

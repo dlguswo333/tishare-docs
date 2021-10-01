@@ -5,7 +5,13 @@
   flex-direction: column;
   margin: 0 4px;
   h2 {
+    display: inline-block;
+    width: fit-content;
     margin-bottom: 0;
+    padding: 6px;
+    background-color: $primary1;
+    color: $onPrimary;
+    border-radius: 4px;
   }
   .Release {
     width: 100%;
@@ -24,7 +30,7 @@
         color: $grey_6;
       }
     }
-    &:not(:last-child) {
+    &:not(:last-of-type) {
       border-bottom: 1px solid $grey_9;
     }
     li {

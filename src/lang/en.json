@@ -52,6 +52,24 @@
         "foot": "",
         "time": "2021-07-09"
       }
+    },
+    "mobile": {
+      "0.2.1": {
+        "head": "tiShare version 0.2.1 has arrived.\nv0.2.1 contains the following bug fixes and improvements.",
+        "bullets": [
+          "Fix crash after if the number of tasks exceeds limit.",
+          "Improve the condition of foreground service notification.",
+          "Fix item checks bugs."
+        ],
+        "foot": "",
+        "time": "2021-08-06"
+      },
+      "0.2.0": {
+        "head": "This is the initial release of tiShare mobile.",
+        "bullets": [],
+        "foot": "",
+        "time": "2021-07-29"
+      }
     }
   },
   "faq": {
