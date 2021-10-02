@@ -16,38 +16,38 @@
   "releases": {
     "desktop": {
       "0.3.0": {
-        "head": "tiShare Desktop v0.3.0 is now released.\nv0.3.0 focuses on improving reliability and UX.\n\nv0.3.0 contains the following bug fixes and improvements:",
+        "head": "tiShare 데스크탑 v0.3.0이 출시되었습니다.\nv0.3.0은 신뢰성과 유저 경험성의 향상에 집중하였습니다.\nv0.3.0은 아래의 버그 수정과 개선점을 포함합니다.",
         "bullets": [
-          "Fix private IP detection algorithms.",
-          "Fix the number of processed items not incrementing for skipped items on receiver side.",
-          "Add spinner to Scan button.",
-          "Add network refresh button. Users now do not need to turn tiShare off and on to refresh network lists.",
-          "Improve navigation bar windows response speed.",
-          "Support drag and drop files and folders.",
-          "Fix and Improve miscellaneous, such as greatly reducing installation sizes."
+          "사설 IP 판단 알고리즘 수정.",
+          "수신자 측에서 받은 아이템 개수에 스킵된 아이템들이 포함 되지 않는 버그 수정.",
+          "스캔 버튼에 스피너 추가. ",
+          "네트워크 새로고침 버튼 추가. 이제 네트워크 목록을 새로고침하기 위해 tiShare을 끄고 다시 켤 필요가 없습니다.",
+          "네비게이션 바의 윈도우 응답 속도 개선.",
+          "파일과 폴더를 드래그 앤 드랍할 수 있는 기능 추가.",
+          "설치 디스크 사용량 대폭 감소를 포함해 기타 여러 가지 기능의 개선과 수정."
         ],
         "foot": "",
         "time": "2021-09-20"
       },
       "0.2.0": {
-        "head": "tiShare Desktop v0.2.0 is out.\ntiShare Desktop v0.2.0 is tested in accordance with tiShare Mobile v0.2.0.\nIt is advised to match app versions. tiShare plans to have integrated versioning in both Desktop and Mobile.\n\nv0.2.0 contains the following bug fixes and improvements:",
+        "head": "tiShare 데스크탑 v0.2.0이 나왔습니다.\ntiShare 데스크탑 v0.2.0의 테스트는 tiShare 모바일 v0.2.0과 함께 진행되었습니다.\n앱의 버전을 서로 맞출 것을 권장합니다. tiShare는 앞으로도 데스크탑과 모바일의 통일된 버저닝을 가지고 갈 것입니다.\n\nv0.2.0은 다음의 버그 수정과 개선점을 포함합니다.",
         "bullets": [
-          "Add a new icon.",
-          "Improve local network detection mechanisms.",
-          "When folders are added to item list, every subitems existing at the time of clicking Send will be transferred.",
-          "Show opponent ID in top right of JobView.",
-          "Delete JobView automatically if ended by on this side, not by the opponent.",
-          "Server and Client have integrated indexing mechanisms.",
-          "Improve data transfer stabilities.",
-          "Fix a bug where even if the app is open to the network, it cannot be searched due to wrong bind address in Linux.",
-          "Fix a bug where uncompletely received files are not deleted automatically.",
-          "Fix miscellaneous bugs."
+          "새 아이콘 추가.",
+          "로컬 네트워크 감지 메커니즘 개선.",
+          "폴더가 아이템 리스트에 존재할 시, Send를 누르는 순간 해당 폴더에 있는 모든 서브 아이템들이 전송됩니다.",
+          "작업 뷰의 우상단에 상대방의 ID 노출.",
+          "작업이 상대방의 요청에 의해서가 아닌 당신의 요청에 의해서 취소되면 해당 작업 뷰는 자동으로 지워집니다.",
+          "서버와 클라이언트의 통합된 인덱싱을 지원합니다.",
+          "데이터 전송 안정성 개선.",
+          "리눅스 운영체제에서 앱이 열려 있어도 잘못된 바인드 주소에 의해 노출되지 않는 버그 수정.",
+          "오류로 인해 제대로 받지 못한 파일이 자동으로 삭제되지 않는 버그 수정.",
+          "기타 여러 가지 버그 수정."
         ],
         "foot": "",
         "time": "2021-08-01"
       },
       "0.1.0": {
-        "head": "This is initial release of tiShare.\nIt may contains some bugs.",
+        "head": "tiShare의 처음 배포 버전입니다.\n버그가 있을 수 있습니다.",
         "bullets": [],
         "foot": "",
         "time": "2021-07-09"
@@ -55,17 +55,17 @@
     },
     "mobile": {
       "0.2.1": {
-        "head": "tiShare version 0.2.1 has arrived.\nv0.2.1 contains the following bug fixes and improvements.",
+        "head": "tiShare 0.2.1 버전이 도착했습니다.\nv0.2.1은 다음의 버그 수정과 개선을 포함합니다.",
         "bullets": [
-          "Fix crash after if the number of tasks exceeds limit.",
-          "Improve the condition of foreground service notification.",
-          "Fix item checks bugs."
+          "작업의 개수가 한계를 초과 후 앱이 크래시하는 버그 수정.",
+          "포그라운드 서비스 알림이 나타나는 조건 개선.",
+          "아이템 체크 버그 수정."
         ],
         "foot": "",
         "time": "2021-08-06"
       },
       "0.2.0": {
-        "head": "This is the initial release of tiShare mobile.",
+        "head": "tiShare 모바일의 처음 출시 버전입니다.",
         "bullets": [],
         "foot": "",
         "time": "2021-07-29"

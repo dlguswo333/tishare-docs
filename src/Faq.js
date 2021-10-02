@@ -9,9 +9,7 @@ import { pathnameState } from './States'
 import { useRecoilState } from 'recoil'
 
 function Faq() {
-  const [t, i18n] = useTranslation()
-  /** @type {Object.<string, {title:string, body:string}} */
-  const items = i18n.getResource('en', 'translation', 'faq.items')
+  const [t,] = useTranslation()
   const [, setPathname] = useRecoilState(pathnameState)
 
   useEffect(() => {
@@ -20,7 +18,7 @@ function Faq() {
 
   function getItems() {
     const ret = []
-    for (let i = 1; i <= Object.keys(items).length; i++) {
+    for (let i = 1; i <= Object.keys(t(`faq.items`, { returnObjects: true })).length; i++) {
       ret.push(
         <Accordion key={i} className={classes.Item}>
           <AccordionSummary className={classes.ItemTitle}

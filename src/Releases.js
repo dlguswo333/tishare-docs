@@ -7,8 +7,6 @@ import { useRecoilState } from 'recoil'
 function Releases() {
   const platforms = ['desktop', 'mobile']
   const [t, i18n] = useTranslation()
-  /** @type {Object.<string, {title:string, body:string}} */
-  const items = i18n.getResource('en', 'translation', 'releases')
   const [, setPathname] = useRecoilState(pathnameState)
 
   useEffect(() => {
@@ -17,7 +15,7 @@ function Releases() {
 
   function getReleases(platform) {
     let ret = []
-    const versions = Object.keys(items[platform])
+    const versions = Object.keys(t(`releases.${platform}`, { returnObjects: true }))
     ret.push(<h2 key={platform}>{platform.toUpperCase()}</h2>)
     ret.push(...versions.map((version) => getRelease(platform, version)))
     return ret
@@ -28,12 +26,12 @@ function Releases() {
    * @param {string} ver
    */
   function getRelease(platform, ver) {
-    const bullets = items[platform][ver]['bullets'].map((val, ind) => <li key={ind}>{val}</li>)
+    const bullets = t(`releases.${platform}.${ver}.bullets`, { returnObjects: true }).map((val, ind) => <li key={ind}>{val}</li>)
     return (
       <section className={classes.Release} key={platform + ver}>
         <div className={classes.Title}>
           <span className={classes.Version}>{ver}</span>
-          <span className={classes.Date}>{new Date(items[platform][ver]['time']).toLocaleDateString(i18n.languages[0])}</span>
+          <span className={classes.Date}>{new Date(t(`releases.${platform}.${ver}.time`)).toLocaleDateString(i18n.languages[0])}</span>
         </div>
         {t(`releases.${platform}.${ver}.head`)}
         <ul>
