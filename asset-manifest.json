@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tishare-docs/static/css/main.fce3fac1.chunk.css",
-    "main.js": "/tishare-docs/static/js/main.68a0c0a9.chunk.js",
-    "main.js.map": "/tishare-docs/static/js/main.68a0c0a9.chunk.js.map",
+    "main.js": "/tishare-docs/static/js/main.78d7d6d7.chunk.js",
+    "main.js.map": "/tishare-docs/static/js/main.78d7d6d7.chunk.js.map",
     "runtime-main.js": "/tishare-docs/static/js/runtime-main.da4993c0.js",
     "runtime-main.js.map": "/tishare-docs/static/js/runtime-main.da4993c0.js.map",
     "static/js/2.102999ca.chunk.js": "/tishare-docs/static/js/2.102999ca.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.da4993c0.js",
     "static/js/2.102999ca.chunk.js",
     "static/css/main.fce3fac1.chunk.css",
-    "static/js/main.68a0c0a9.chunk.js"
+    "static/js/main.78d7d6d7.chunk.js"
   ]
 }
