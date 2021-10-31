@@ -88,7 +88,7 @@
       },
       "4": {
         "title": "Device is open but does not show up.",
-        "body": "Sometimes unknown errors happen so devices are not detected. Close and open again. Or open another device to the network."
+        "body": "Sometimes unknown errors happen so devices are not detected. Close and open again. Or open another device to the network. Also, firewall may be blocking accesses to the device. Check if tiShare is on exception list."
       }
     }
   }
