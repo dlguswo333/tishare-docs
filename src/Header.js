@@ -46,13 +46,13 @@ function Header({ lang, setLang }) {
         <select defaultValue={lang} onChange={(e) => { setLang(e.target.value) }} className={classes.SelectLang}>
           {getLangs()}
         </select>
-        <Link to='/tishare-docs/'>
+        <Link to='/'>
           <button className={/^\/tishare-docs\/?$/.test(pathname) ? classes.Current : ''}>HOME</button>
         </Link>
-        <Link to='/tishare-docs/releases'>
+        <Link to='/releases'>
           <button className={pathname.startsWith('/tishare-docs/releases') ? classes.Current : ''}>Releases</button>
         </Link>
-        <Link to='/tishare-docs/faq'>
+        <Link to='/faq'>
           <button className={pathname.startsWith('/tishare-docs/faq') ? classes.Current : ''}>FAQ</button>
         </Link>
         <Link to='/tishare-docs/policy'>
