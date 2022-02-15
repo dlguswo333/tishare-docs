@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import classes from './styles/Header.module.scss'
 import { useTranslation } from 'react-i18next'
-import { pathnameState } from './States'
-import { useRecoilState } from 'recoil'
+
 /**
  * @param {Object} props
  * @param {string} props.lang
@@ -12,7 +11,7 @@ import { useRecoilState } from 'recoil'
 function Header({ lang, setLang }) {
   const [, i18n] = useTranslation()
   const [showMenu, setShowMenu] = useState(false)
-  const [pathname,] = useRecoilState(pathnameState)
+  const pathname = useLocation().pathname
 
   useEffect(() => {
     if (lang && i18n.languages.includes(lang)) {
@@ -55,6 +54,9 @@ function Header({ lang, setLang }) {
         </Link>
         <Link to='/tishare-docs/faq'>
           <button className={pathname.startsWith('/tishare-docs/faq') ? classes.Current : ''}>FAQ</button>
+        </Link>
+        <Link to='/tishare-docs/policy'>
+          <button className={pathname.startsWith('/tishare-docs/policy') ? classes.Current : ''}>Policy</button>
         </Link>
       </div>
     </header>

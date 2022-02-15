@@ -1,17 +1,10 @@
-import { useEffect } from 'react'
 import classes from './styles/Releases.module.scss'
 import { useTranslation } from 'react-i18next'
-import { pathnameState } from './States'
-import { useRecoilState } from 'recoil'
 
 function Releases() {
   const platforms = ['desktop', 'mobile']
   const [t, i18n] = useTranslation()
-  const [, setPathname] = useRecoilState(pathnameState)
 
-  useEffect(() => {
-    setPathname('/tishare-docs/releases')
-  }, [setPathname])
 
   function getReleases(platform) {
     let ret = []
