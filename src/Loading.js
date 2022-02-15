@@ -1,4 +1,4 @@
-import classes from './Loading.module.scss'
+import classes from ./ styles / Loading.module.scss
 
 function Loading() {
   return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import classes from './Header.module.scss'
+import classes from './styles/Header.module.scss'
 import { useTranslation } from 'react-i18next'
 import { pathnameState } from './States'
 import { useRecoilState } from 'recoil'

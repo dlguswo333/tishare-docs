@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import classes from './Faq.module.scss'
+import classes from './styles/Faq.module.scss'
 import { useTranslation } from 'react-i18next'
 import Accordion from '@material-ui/core/Accordion'
 import AccordionSummary from '@material-ui/core/AccordionSummary'

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import classes from './Releases.module.scss'
+import classes from './styles/Releases.module.scss'
 import { useTranslation } from 'react-i18next'
 import { pathnameState } from './States'
 import { useRecoilState } from 'recoil'
