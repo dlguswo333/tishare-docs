@@ -47,16 +47,16 @@ function Header({ lang, setLang }) {
           {getLangs()}
         </select>
         <Link to='/'>
-          <button className={/^\/tishare-docs\/?$/.test(pathname) ? classes.Current : ''}>HOME</button>
+          <button className={/\/$/.test(pathname) ? classes.Current : ''}>HOME</button>
         </Link>
         <Link to='/releases'>
-          <button className={pathname.startsWith('/tishare-docs/releases') ? classes.Current : ''}>Releases</button>
+          <button className={pathname.startsWith('/releases') ? classes.Current : ''}>Releases</button>
         </Link>
         <Link to='/faq'>
-          <button className={pathname.startsWith('/tishare-docs/faq') ? classes.Current : ''}>FAQ</button>
+          <button className={pathname.startsWith('/faq') ? classes.Current : ''}>FAQ</button>
         </Link>
-        <Link to='/tishare-docs/policy'>
-          <button className={pathname.startsWith('/tishare-docs/policy') ? classes.Current : ''}>Policy</button>
+        <Link to='/policy'>
+          <button className={pathname.startsWith('/policy') ? classes.Current : ''}>Policy</button>
         </Link>
       </div>
     </header>

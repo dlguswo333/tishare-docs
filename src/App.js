@@ -16,10 +16,10 @@ function App() {
         <RecoilRoot>
           <Header lang={lang} setLang={setLang} />
           <Switch>
-            <Route path='/tishare-docs' component={Home} />
             <Route path='/releases' component={Releases} />
             <Route path='/faq' component={Faq} />
             <Route path='/policy' component={Policy} />
+            <Route path='/' component={Home} />
           </Switch>
         </RecoilRoot>
       </div>
