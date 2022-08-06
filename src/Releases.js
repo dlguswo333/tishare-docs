@@ -5,7 +5,6 @@ function Releases() {
   const platforms = ['desktop', 'mobile']
   const [t, i18n] = useTranslation()
 
-
   function getReleases(platform) {
     let ret = []
     const versions = Object.keys(t(`releases.${platform}`, { returnObjects: true }))

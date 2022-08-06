@@ -54,6 +54,33 @@
       }
     },
     "mobile": {
+      "0.3.2": {
+        "head": "tiShare 0.3.2 has been released.\nv0.3.2 cotains the following bug fix.",
+        "bullets": [
+          "Fix application creash on scan."
+        ],
+        "foot": "",
+        "time": "2021-07-30"
+      },
+      "0.3.1": {
+        "head": "tiShare 0.3.1 is out.\nv0.3.1 contains following bug fixes and improvements.",
+        "bullets": [
+          "Upgrade Android API version.",
+          "Add all files access permission request dialog for Android 11 or above."
+        ],
+        "foot": "",
+        "time": "2021-07-30"
+      },
+      "0.3.0": {
+        "head": "tiShare 0.3.0 is out.\nIt contains the following improvements.",
+        "bullets": [
+          "Add network refresh button.",
+          "Show loading bar while scanning.",
+          "Create temporary my ID if not exists."
+        ],
+        "foot": "",
+        "time": "2022-03-03"
+      },
       "0.2.1": {
         "head": "tiShare version 0.2.1 has arrived.\nv0.2.1 contains the following bug fixes and improvements.",
         "bullets": [
