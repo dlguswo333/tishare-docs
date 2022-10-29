@@ -1,4 +1,4 @@
-import classes from ./ styles / ErrorPage.module.scss
+import classes from './ErrorPage.module.scss'
 /**
  * NOTE Obsolete.
  * Safe to delete.
