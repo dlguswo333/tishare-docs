@@ -1,29 +1,24 @@
-import { Route, Switch, HashRouter } from 'react-router-dom'
-import Home from './Home'
-import Releases from './Releases'
-import Faq from './Faq'
 import classes from './App.module.scss'
-import Header from './Header'
 import { RecoilRoot } from 'recoil'
-import { useState } from 'react'
-import Policy from './Policy'
+import { useEffect, useState } from 'react'
+import i18nInit from '../src/i18nInit'
+import Home from './Home'
+
+if (typeof window !== 'undefined') {
+  i18nInit()
+}
 
 function App() {
-  const [lang, setLang] = useState(window.localStorage.getItem('preferredLang'))
+  const [lang, setLang] = useState('en')
+  useEffect(() => {
+    setLang(window.localStorage.getItem('preferredLang') ?? 'en')
+  }, [])
   return (
-    <HashRouter>
-      <div className={classes.App}>
-        <RecoilRoot>
-          <Header lang={lang} setLang={setLang} />
-          <Switch>
-            <Route path='/releases' component={Releases} />
-            <Route path='/faq' component={Faq} />
-            <Route path='/policy' component={Policy} />
-            <Route path='/' component={Home} />
-          </Switch>
-        </RecoilRoot>
-      </div>
-    </HashRouter>
+    <div className={classes.App}>
+      <RecoilRoot>
+        <Home />
+      </RecoilRoot>
+    </div>
   )
 }
 

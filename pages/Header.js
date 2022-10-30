@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import classes from './styles/Header.module.scss'
+import Link from 'next/link'
+import classes from './Header.module.scss'
 import { useTranslation } from 'react-i18next'
 
 /**
@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 function Header({ lang, setLang }) {
   const [, i18n] = useTranslation()
   const [showMenu, setShowMenu] = useState(false)
-  const pathname = useLocation().pathname
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/'
 
   useEffect(() => {
     if (lang && i18n.languages.includes(lang)) {
@@ -28,6 +28,9 @@ function Header({ lang, setLang }) {
   function getLangs() {
     const langs = i18n.languages
     const ret = []
+    if (!langs) {
+      return null
+    }
     for (let lang of langs) {
       ret.push(<option value={lang} key={lang}>{i18n.getResource(lang, 'translation', 'lang')}</option>)
     }
@@ -46,16 +49,16 @@ function Header({ lang, setLang }) {
         <select defaultValue={lang} onChange={(e) => { setLang(e.target.value) }} className={classes.SelectLang}>
           {getLangs()}
         </select>
-        <Link to='/'>
+        <Link href='/'>
           <button className={/\/$/.test(pathname) ? classes.Current : ''}>HOME</button>
         </Link>
-        <Link to='/releases'>
+        <Link href='/releases'>
           <button className={pathname.startsWith('/releases') ? classes.Current : ''}>Releases</button>
         </Link>
-        <Link to='/faq'>
+        <Link href='/faq'>
           <button className={pathname.startsWith('/faq') ? classes.Current : ''}>FAQ</button>
         </Link>
-        <Link to='/policy'>
+        <Link href='/policy'>
           <button className={pathname.startsWith('/policy') ? classes.Current : ''}>Policy</button>
         </Link>
       </div>
