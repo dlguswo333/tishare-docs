@@ -8,6 +8,10 @@ function Releases() {
   function getReleases(platform) {
     let ret = []
     const versions = Object.keys(t(`releases.${platform}`, { returnObjects: true }))
+    if (typeof versions !== 'object' || versions.includes('0')) {
+      // If the above condition is true, the i18n is not yet fully loaded.
+      return null
+    }
     ret.push(<h2 key={platform}>{platform.toUpperCase()}</h2>)
     ret.push(...versions.map((version) => getRelease(platform, version)))
     return ret
