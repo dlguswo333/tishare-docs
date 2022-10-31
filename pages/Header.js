@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import classes from './Header.module.scss'
 import { useTranslation } from 'react-i18next'
+import { useRouter } from 'next/router'
 
 /**
  * @param {Object} props
@@ -11,7 +12,7 @@ import { useTranslation } from 'react-i18next'
 function Header({ lang, setLang }) {
   const [, i18n] = useTranslation()
   const [showMenu, setShowMenu] = useState(false)
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/'
+  const { pathname } = useRouter()
 
   useEffect(() => {
     if (lang && i18n.languages.includes(lang)) {
