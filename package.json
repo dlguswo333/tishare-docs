@@ -23,8 +23,9 @@
     "build": "next build",
     "dev": "next dev",
     "test": "next test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "export": "next export",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
   "eslintConfig": {
     "extends": [
