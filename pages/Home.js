@@ -1,4 +1,4 @@
-import classes from './styles/Home.module.scss'
+import classes from './Home.module.scss'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 

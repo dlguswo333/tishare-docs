@@ -1,4 +1,4 @@
-import classes from './styles/Policy.module.scss'
+import classes from './Policy.module.scss'
 
 export default function Policy() {
   return (
