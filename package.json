@@ -23,8 +23,8 @@
     "dev": "next dev",
     "test": "next test",
     "export": "next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
+    "predeploy": "npm run build && npm run export && touch out/.nojekyll",
+    "deploy": "git switch -c tmp && git add -f out/ && git commit -m 'Deploy to gh-pages' && git push origin `git subtree split --prefix out tmp`:gh-pages --force && git switch main && git branch -D tmp"
   },
   "eslintConfig": {
     "extends": [
@@ -43,8 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }
