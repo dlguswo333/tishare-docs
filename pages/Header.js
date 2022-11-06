@@ -1,53 +1,53 @@
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
-import classes from './Header.module.scss'
-import { useTranslation } from 'react-i18next'
-import { useRouter } from 'next/router'
+import {useEffect, useState} from 'react';
+import Link from 'next/link';
+import classes from './Header.module.scss';
+import {useTranslation} from 'react-i18next';
+import {useRouter} from 'next/router';
 
 /**
  * @param {Object} props
  * @param {string} props.lang
  * @param {Function} props.setLang
  */
-function Header({ lang, setLang }) {
-  const [, i18n] = useTranslation()
-  const [showMenu, setShowMenu] = useState(false)
-  const { pathname } = useRouter()
+function Header ({lang, setLang}) {
+  const [, i18n] = useTranslation();
+  const [showMenu, setShowMenu] = useState(false);
+  const {pathname} = useRouter();
 
   useEffect(() => {
     if (lang && i18n.languages.includes(lang)) {
-      window.localStorage.setItem('preferredLang', lang)
-      i18n.changeLanguage(lang)
+      window.localStorage.setItem('preferredLang', lang);
+      i18n.changeLanguage(lang);
     }
     else {
       // Set default to english.
-      window.localStorage.removeItem('preferredLang')
-      i18n.changeLanguage('en')
+      window.localStorage.removeItem('preferredLang');
+      i18n.changeLanguage('en');
     }
-  }, [lang, i18n])
+  }, [lang, i18n]);
 
-  function getLangs() {
-    const langs = i18n.languages
-    const ret = []
+  function getLangs () {
+    const langs = i18n.languages;
+    const ret = [];
     if (!langs) {
-      return null
+      return null;
     }
     for (let lang of langs) {
-      ret.push(<option value={lang} key={lang}>{i18n.getResource(lang, 'translation', 'lang')}</option>)
+      ret.push(<option value={lang} key={lang}>{i18n.getResource(lang, 'translation', 'lang')}</option>);
     }
-    return ret
+    return ret;
   }
 
   return (
     <header className={classes.Header}>
       <div className={classes.Menu}>
         <img src='/tishare-docs/logo256.png' className={classes.LogoImg} alt='tiShare' />
-        <button className={classes.MenuImg} onClick={() => { setShowMenu((value) => !value) }}>
+        <button className={classes.MenuImg} onClick={() => { setShowMenu((value) => !value); }}>
           <img src='/tishare-docs/menu.svg' alt='menu' />
         </button>
       </div>
       <div className={showMenu ? classes.Links + ' ' + classes.Show : classes.Links}>
-        <select defaultValue={lang} onChange={(e) => { setLang(e.target.value) }} className={classes.SelectLang}>
+        <select defaultValue={lang} onChange={(e) => { setLang(e.target.value); }} className={classes.SelectLang}>
           {getLangs()}
         </select>
         <Link href='/'>
@@ -64,7 +64,7 @@ function Header({ lang, setLang }) {
         </Link>
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

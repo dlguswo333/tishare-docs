@@ -1,28 +1,28 @@
-import classes from './Releases.module.scss'
-import { useTranslation } from 'react-i18next'
+import classes from './Releases.module.scss';
+import {useTranslation} from 'react-i18next';
 
-function Releases() {
-  const platforms = ['desktop', 'mobile']
-  const [t, i18n] = useTranslation()
+function Releases () {
+  const platforms = ['desktop', 'mobile'];
+  const [t, i18n] = useTranslation();
 
-  function getReleases(platform) {
-    let ret = []
-    const versions = Object.keys(t(`releases.${platform}`, { returnObjects: true }))
+  function getReleases (platform) {
+    let ret = [];
+    const versions = Object.keys(t(`releases.${platform}`, {returnObjects: true}));
     if (typeof versions !== 'object' || versions.includes('0')) {
       // If the above condition is true, the i18n is not yet fully loaded.
-      return null
+      return null;
     }
-    ret.push(<h2 key={platform}>{platform.toUpperCase()}</h2>)
-    ret.push(...versions.map((version) => getRelease(platform, version)))
-    return ret
+    ret.push(<h2 key={platform}>{platform.toUpperCase()}</h2>);
+    ret.push(...versions.map((version) => getRelease(platform, version)));
+    return ret;
   }
 
   /**
    * @param {string} platform
    * @param {string} ver
    */
-  function getRelease(platform, ver) {
-    const bullets = t(`releases.${platform}.${ver}.bullets`, { returnObjects: true }).map((val, ind) => <li key={ind}>{val}</li>)
+  function getRelease (platform, ver) {
+    const bullets = t(`releases.${platform}.${ver}.bullets`, {returnObjects: true}).map((val, ind) => <li key={ind}>{val}</li>);
     return (
       <section className={classes.Release} key={platform + ver}>
         <div className={classes.Title}>
@@ -34,7 +34,7 @@ function Releases() {
           {bullets}
         </ul>
       </section>
-    )
+    );
   }
 
   return (
@@ -43,7 +43,7 @@ function Releases() {
         <div key={platform}>{getReleases(platform)}</div>)
       )}
     </div>
-  )
+  );
 }
 
-export default Releases
+export default Releases;

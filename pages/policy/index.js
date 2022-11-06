@@ -1,6 +1,6 @@
-import classes from './Policy.module.scss'
+import classes from './Policy.module.scss';
 
-export default function Policy() {
+export default function Policy () {
   return (
     <div className={classes.Policy}>
       <strong>Privacy Policy</strong> <p>
@@ -60,7 +60,7 @@ export default function Policy() {
         Cookies are files with a small amount of data that are
         commonly used as anonymous unique identifiers. These are sent
         to your browser from the websites that you visit and are
-        stored on your device's internal memory.
+        stored on your device&apos;s internal memory.
       </p>
       <p>
         This Service does not use these “cookies” explicitly. However,
@@ -144,5 +144,5 @@ export default function Policy() {
         </a>
       </p>
     </div>
-  )
+  );
 }

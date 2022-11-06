@@ -1,11 +1,11 @@
-import classes from './Home.module.scss'
-import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
+import classes from './Home.module.scss';
+import {useTranslation} from 'react-i18next';
+import {useState} from 'react';
 
-function Home() {
+function Home () {
   // eslint-disable-next-line
   const [t, _] = useTranslation()
-  const [desktopImgHover, setDesktopImgHover] = useState(false)
+  const [desktopImgHover, setDesktopImgHover] = useState(false);
 
   return (
     <div className={classes.Home}>
@@ -15,21 +15,21 @@ function Home() {
         <div className={classes.ImgContainer}>
           <img src='/tishare-docs/desktop-run.png' className={classes.DesktopSampleImg} alt='desktop-run'
             onPointerOver={() => {
-              setDesktopImgHover(true)
+              setDesktopImgHover(true);
             }}
             onPointerMove={() => {
-              setDesktopImgHover(true)
+              setDesktopImgHover(true);
             }}
             onPointerLeave={() => {
-              setDesktopImgHover(false)
+              setDesktopImgHover(false);
             }}
             onContextMenu={(e) => {
-              e.preventDefault()
+              e.preventDefault();
             }}
           />
           <img src='/tishare-docs/mobile-run.png' className={classes.MobileSampleImg + ' ' + (desktopImgHover ? classes.Opacity : '')} alt='mobile-run'
             onContextMenu={(e) => {
-              e.preventDefault()
+              e.preventDefault();
             }}
           />
         </div>
@@ -79,7 +79,7 @@ function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

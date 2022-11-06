@@ -1,9 +1,9 @@
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
-import enLang from '../public/lang/en.json'
-import koLang from '../public/lang/ko.json'
+import i18n from 'i18next';
+import {initReactI18next} from 'react-i18next';
+import enLang from '../public/lang/en.json';
+import koLang from '../public/lang/ko.json';
 
-function i18nInit() {
+function i18nInit () {
   i18n.use(initReactI18next).init({
     resources: {
       en: {
@@ -21,8 +21,8 @@ function i18nInit() {
     debug: false
   }, (err) => {
     if (err)
-      console.log('i18n init error', err)
-  })
+      console.log('i18n init error', err);
+  });
 }
 
-export default i18nInit
+export default i18nInit;
