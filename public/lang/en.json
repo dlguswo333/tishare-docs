@@ -15,6 +15,30 @@
   },
   "releases": {
     "desktop": {
+      "0.3.8": {
+        "head": "tiShare Desktop v0.3.8 has been released.\nv0.3.8 focuses on improving reliabilities.",
+        "bullets": [
+          "Update electron to v26.\nThis is related to the recent webp security vulnerability => CVE-2023-4863. Users are recommended to update to v0.3.8."
+        ],
+        "foot": "",
+        "time": "2023-09-24"
+      },
+      "0.3.7": {
+        "head": "tiShare Desktop v0.3.7 has been released.\nv0.3.7 focuses on improving reliabilities.",
+        "bullets": [
+          "Fix weird looking icon in taskbar on Windows."
+        ],
+        "foot": "",
+        "time": "2023-03-19"
+      },
+      "0.3.6": {
+        "head": "tiShare Desktop v0.3.6 has been released.\nv0.3.6 focuses on improving reliabilities.",
+        "bullets": [
+          "Fix Android App crashes if it scans tiShare desktop versions. This was due to desktop apps do not reply to scanning with essential information."
+        ],
+        "foot": "",
+        "time": "2023-03-19"
+      },
       "0.3.5": {
         "head": "tiShare Desktop v0.3.5 has been released.\nv0.3.5 focuses on improving reliabilities.",
         "bullets": [
