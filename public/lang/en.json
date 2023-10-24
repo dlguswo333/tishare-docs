@@ -87,6 +87,17 @@
       }
     },
     "mobile": {
+      "0.4.2": {
+        "head": "tiShare v0.4.2 has arrived.",
+        "bullets": [
+          "Fix setting receive path does not work",
+          "Fix thumbnails not showing in explorer",
+          "Improve explorer stability",
+          "Fix normal files appear when selecting receive directory."
+        ],
+        "foot": "",
+        "time": "2023-10-03"
+      },
       "0.4.0": {
         "head": "tiShare 0.4.0 version update",
         "bullets": [
