@@ -1,0 +1,186 @@
+{
+  "lang": "English",
+  "home": {
+    "heading1": "Share Files and Folders",
+    "heading2": "with tiShare.",
+    "download-now": "Download Now",
+    "grid1Title": "Share in Local Network",
+    "grid1Body": "Open yourself in the local networks such as Wi-Fi or Routers. Other devices will be able to see you.",
+    "grid2Title": "Run Cross Platform",
+    "grid2Body": "tiShare supports multiple platforms: Windows, Linux, and Android.",
+    "grid3Title": "Share both Files and Folders",
+    "grid3Body": "with tiShare, you can share folders, not only files.",
+    "grid4Title": "Multiple Transfer Tasks Support",
+    "grid4Body": "Concurrently send and receives files with multiple devices at the same time."
+  },
+  "releases": {
+    "desktop": {
+      "0.3.8": {
+        "head": "tiShare Desktop v0.3.8 has been released.\nv0.3.8 focuses on improving reliabilities.",
+        "bullets": [
+          "Update electron to v26.\nThis is related to the recent webp security vulnerability => CVE-2023-4863. Users are recommended to update to v0.3.8."
+        ],
+        "foot": "",
+        "time": "2023-09-24"
+      },
+      "0.3.7": {
+        "head": "tiShare Desktop v0.3.7 has been released.\nv0.3.7 focuses on improving reliabilities.",
+        "bullets": [
+          "Fix weird looking icon in taskbar on Windows."
+        ],
+        "foot": "",
+        "time": "2023-03-19"
+      },
+      "0.3.6": {
+        "head": "tiShare Desktop v0.3.6 has been released.\nv0.3.6 focuses on improving reliabilities.",
+        "bullets": [
+          "Fix Android App crashes if it scans tiShare desktop versions. This was due to desktop apps do not reply to scanning with essential information."
+        ],
+        "foot": "",
+        "time": "2023-03-19"
+      },
+      "0.3.5": {
+        "head": "tiShare Desktop v0.3.5 has been released.\nv0.3.5 focuses on improving reliabilities.",
+        "bullets": [
+          "Add number of tasks display in Navigation bar.",
+          "Fix error when clicking cancel button."
+        ],
+        "foot": "",
+        "time": "2022-10-22"
+      },
+      "0.3.0": {
+        "head": "tiShare Desktop v0.3.0 is now released.\nv0.3.0 focuses on improving reliability and UX.\n\nv0.3.0 contains the following bug fixes and improvements:",
+        "bullets": [
+          "Fix private IP detection algorithms.",
+          "Fix the number of processed items not incrementing for skipped items on receiver side.",
+          "Add spinner to Scan button.",
+          "Add network refresh button. Users now do not need to turn tiShare off and on to refresh network lists.",
+          "Improve navigation bar windows response speed.",
+          "Support drag and drop files and folders.",
+          "Fix and Improve miscellaneous, such as greatly reducing installation sizes."
+        ],
+        "foot": "",
+        "time": "2021-09-20"
+      },
+      "0.2.0": {
+        "head": "tiShare Desktop v0.2.0 is out.\ntiShare Desktop v0.2.0 is tested in accordance with tiShare Mobile v0.2.0.\nIt is advised to match app versions. tiShare plans to have integrated versioning in both Desktop and Mobile.\n\nv0.2.0 contains the following bug fixes and improvements:",
+        "bullets": [
+          "Add a new icon.",
+          "Improve local network detection mechanisms.",
+          "When folders are added to item list, every subitems existing at the time of clicking Send will be transferred.",
+          "Show opponent ID in top right of JobView.",
+          "Delete JobView automatically if ended by on this side, not by the opponent.",
+          "Server and Client have integrated indexing mechanisms.",
+          "Improve data transfer stabilities.",
+          "Fix a bug where even if the app is open to the network, it cannot be searched due to wrong bind address in Linux.",
+          "Fix a bug where uncompletely received files are not deleted automatically.",
+          "Fix miscellaneous bugs."
+        ],
+        "foot": "",
+        "time": "2021-08-01"
+      },
+      "0.1.0": {
+        "head": "This is initial release of tiShare.\nIt may contains some bugs.",
+        "bullets": [],
+        "foot": "",
+        "time": "2021-07-09"
+      }
+    },
+    "mobile": {
+      "0.4.3": {
+        "head": "tiShare 0.4.3 has arrived. It contains the following improvements:",
+        "bullets": [
+          "Improve folder selector design",
+          "Improve explorer path design",
+          "Fix foreground service notification not visible from notification drawer on Android 33 or higher devices"
+        ],
+        "foot": "",
+        "time": "2024-02-17"
+      },
+      "0.4.2": {
+        "head": "tiShare v0.4.2 has arrived.",
+        "bullets": [
+          "Fix setting receive path does not work",
+          "Fix thumbnails not showing in explorer",
+          "Improve explorer stability",
+          "Fix normal files appear when selecting receive directory."
+        ],
+        "foot": "",
+        "time": "2023-10-03"
+      },
+      "0.4.0": {
+        "head": "tiShare 0.4.0 version update",
+        "bullets": [
+          "Add an integrated file explorer. Users now select both folders and files at one time.",
+          "Upgrade Android SDK verision.",
+          "Fix issues and Improve stabilities."
+        ],
+        "foot": "",
+        "time": "2023-04-24"
+      },
+      "0.3.2": {
+        "head": "tiShare 0.3.2 has been released.\nv0.3.2 cotains the following bug fix.",
+        "bullets": [
+          "Fix application creash on scan."
+        ],
+        "foot": "",
+        "time": "2021-07-30"
+      },
+      "0.3.1": {
+        "head": "tiShare 0.3.1 is out.\nv0.3.1 contains following bug fixes and improvements.",
+        "bullets": [
+          "Upgrade Android API version.",
+          "Add all files access permission request dialog for Android 11 or above."
+        ],
+        "foot": "",
+        "time": "2021-07-30"
+      },
+      "0.3.0": {
+        "head": "tiShare 0.3.0 is out.\nIt contains the following improvements.",
+        "bullets": [
+          "Add network refresh button.",
+          "Show loading bar while scanning.",
+          "Create temporary my ID if not exists."
+        ],
+        "foot": "",
+        "time": "2022-03-03"
+      },
+      "0.2.1": {
+        "head": "tiShare version 0.2.1 has arrived.\nv0.2.1 contains the following bug fixes and improvements.",
+        "bullets": [
+          "Fix crash after if the number of tasks exceeds limit.",
+          "Improve the condition of foreground service notification.",
+          "Fix item checks bugs."
+        ],
+        "foot": "",
+        "time": "2021-08-06"
+      },
+      "0.2.0": {
+        "head": "This is the initial release of tiShare mobile.",
+        "bullets": [],
+        "foot": "",
+        "time": "2021-07-29"
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "1": {
+        "title": "How do I select multiple items in Item View?",
+        "body": "You can select multiple items with SHIFT + CLICK in tiShare Desktop. In tiShare Mobile, You can do the same thing by long-pressing checkboxs."
+      },
+      "2": {
+        "title": "Is it secure to use tiShare in public networks?",
+        "body": "Sadly, no. tiShare is running without any server, so you can use tiShare without worrying about getting the service shut down due to server maintenance costs. However, in return, we are not able to provide resources such as SSL keys to users to encrypt files flying on the networks. We do not recommend and do not take responsibility using tiShare in public and untrusted networks: such as coffee shop Wi-Fi routers. Use tiShare only in networks with trust like your home Wi-Fi networks."
+      },
+      "3": {
+        "title": "How can I communicate with another device?",
+        "body": "In order for two devices to communicate, one device needs to open itself. Press the button located at main screen or Device tab to open the device to the network, and press Scan button on the other device. The opened device will show up on the list."
+      },
+      "4": {
+        "title": "Device is open but does not show up.",
+        "body": "Sometimes unknown errors happen so devices are not detected. Close and open again. Or open another device to the network. Also, firewall may be blocking accesses to the device. Check if tiShare is on exception list."
+      }
+    }
+  }
+}
