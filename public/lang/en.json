@@ -87,6 +87,16 @@
       }
     },
     "mobile": {
+      "0.4.3": {
+        "head": "tiShare 0.4.3 has arrived. It contains the following improvements:",
+        "bullets": [
+          "Improve folder selector design",
+          "Improve explorer path design",
+          "Fix foreground service notification not visible from notification drawer on Android 33 or higher devices"
+        ],
+        "foot": "",
+        "time": "2024-02-17"
+      },
       "0.4.2": {
         "head": "tiShare v0.4.2 has arrived.",
         "bullets": [
