@@ -87,6 +87,19 @@
       }
     },
     "mobile": {
+      "0.4.4": {
+        "head": "tiShare v0.4.4 has been released. It has the following updates.",
+        "bullets": [
+          "Improve the path style of explorer.",
+          "Improve thumbnail image mechanisms.",
+          "Show the # of items selected",
+          "Fix 'Select All' checkbox bug",
+          "Fix UI bug in Item tab",
+          "Improve miscellaneous"
+        ],
+        "foot": "",
+        "time": "2024-04-30"
+      },
       "0.4.3": {
         "head": "tiShare 0.4.3 has arrived. It contains the following improvements:",
         "bullets": [
