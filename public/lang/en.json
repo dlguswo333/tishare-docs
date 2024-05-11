@@ -15,6 +15,15 @@
   },
   "releases": {
     "desktop": {
+      "0.4.0": {
+        "head": "tiShare Desktop v0.4.0 has been released.\nThe update logs are the followings.",
+        "bullets": [
+          "Show thumbnails of items if possible.",
+          "improves styles."
+        ],
+        "foot": "",
+        "time": "2024-05-10"
+      },
       "0.3.8": {
         "head": "tiShare Desktop v0.3.8 has been released.\nv0.3.8 focuses on improving reliabilities.",
         "bullets": [
