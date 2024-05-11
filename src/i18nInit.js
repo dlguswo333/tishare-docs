@@ -17,8 +17,8 @@ function i18nInit () {
       'en', 'ko'
     ],
     fallbackLng: ['en', 'ko'],
-    lng: localStorage.getItem('preferredLang') || 'en',
-    debug: false
+    lng: 'en',
+    debug: false,
   }, (err) => {
     if (err)
       console.log('i18n init error', err);

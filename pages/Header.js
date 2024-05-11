@@ -14,16 +14,23 @@ function Header ({lang, setLang}) {
   const [showMenu, setShowMenu] = useState(false);
   const {pathname} = useRouter();
 
+  // Get preferred language.
   useEffect(() => {
-    if (lang && i18n.languages.includes(lang)) {
-      window.localStorage.setItem('preferredLang', lang);
-      i18n.changeLanguage(lang);
+    const preferredLang = localStorage.getItem('preferredLang') ?? 'en';
+    if (preferredLang && i18n.languages.includes(preferredLang)) {
+      setLang(preferredLang);
     }
     else {
       // Set default to english.
-      window.localStorage.removeItem('preferredLang');
-      i18n.changeLanguage('en');
+      localStorage.removeItem('preferredLang');
+      setLang('en');
     }
+  }, []);
+
+  // Update language settings on select.
+  useEffect(() => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem('preferredLang', lang);
   }, [lang, i18n]);
 
   function getLangs () {
@@ -47,7 +54,7 @@ function Header ({lang, setLang}) {
         </button>
       </div>
       <div className={showMenu ? classes.Links + ' ' + classes.Show : classes.Links}>
-        <select defaultValue={lang} onChange={(e) => { setLang(e.target.value); }} className={classes.SelectLang}>
+        <select value={lang} onChange={(e) => setLang(e.target.value)} className={classes.SelectLang}>
           {getLangs()}
         </select>
         <Link href='/'>
