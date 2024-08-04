@@ -15,6 +15,17 @@
   },
   "releases": {
     "desktop": {
+      "0.5.0": {
+        "head": "tiShare Desktop v0.5.0 has been released.",
+        "bullets": [
+          "Edit navigation implementations.",
+          "Show files' modified dates.",
+          "Fix 'jpeg' image file thumbnails not showing.",
+          "Improve app styles."
+        ],
+        "foot": "",
+        "time": "2024-08-04"
+      },
       "0.4.0": {
         "head": "tiShare Desktop v0.4.0 has been released.\nThe update logs are the followings.",
         "bullets": [
