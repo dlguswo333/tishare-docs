@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" className="Icon" width="100%"
+    viewBox="0 0 100 100">
+    <title>Linux</title>
+    <path d="M20 66 C10 11 90 11 80 66 L75 66 L50 64 L25 66 Z" style="fill:#000" />
+    <path d="M30 64 C25 39 50 39 45 64 Z" style="fill:#fff" />
+    <path d="M70 64 C75 39 50 39 55 64 Z" style="fill:#fff" />
+    <path d="M35 63 C30 49 45 49 40 63 Z" style="fill:#000" />
+    <path d="M65 63 C70 49 55 49 60 63 Z" style="fill:#000" />
+    <path d="M25 66 C50 54 50 54 75 66 Z" style="fill:#f8bf11" />
+</svg>
