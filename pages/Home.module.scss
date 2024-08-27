@@ -14,7 +14,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: onLoad $longInterval linear forwards;
+    &.InitAnimation {
+      animation: onLoad $longInterval linear forwards;
+    }
     span {
       text-align: center;
       font-size: $fontSize4;

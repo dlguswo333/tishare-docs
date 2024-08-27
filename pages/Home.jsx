@@ -1,15 +1,23 @@
 import classes from './Home.module.scss';
 import {useTranslation} from 'react-i18next';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
+
+let isFirstRender = true;
 
 function Home () {
   // eslint-disable-next-line
   const [t, _] = useTranslation()
   const [desktopImgHover, setDesktopImgHover] = useState(false);
 
+  useEffect(() => {
+    return () => {
+      isFirstRender = false;
+    };
+  }, []);
+
   return (
     <div className={classes.Home}>
-      <div className={classes.Heading}>
+      <div className={classes.Heading + ' ' + (isFirstRender ? classes.InitAnimation : '')}>
         <span>{t('home.heading1')}</span>
         <span>{t('home.heading2')}</span>
         <div className={classes.ImgContainer}>
