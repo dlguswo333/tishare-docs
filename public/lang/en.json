@@ -15,6 +15,16 @@
   },
   "releases": {
     "desktop": {
+      "0.5.1": {
+        "head": "tiShare Desktop v0.5.1 has been released.",
+        "bullets": [
+          "Add item detail view. Click a thumbnail to know more about the file such as the file path.",
+          "Update electron version to v33.",
+          "Improve app stabilities and code qualities."
+        ],
+        "foot": "",
+        "time": "2024-12-10"
+      },
       "0.5.0": {
         "head": "tiShare Desktop v0.5.0 has been released.",
         "bullets": [
