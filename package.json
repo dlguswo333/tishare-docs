@@ -22,7 +22,7 @@
     "build": "next build",
     "dev": "next dev",
     "test": "next test",
-    "export": "next export",
+    "export": "next export"
   },
   "browserslist": {
     "production": [
