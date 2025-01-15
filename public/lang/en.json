@@ -117,6 +117,16 @@
       }
     },
     "mobile": {
+      "0.5.1": {
+        "head": "tiShare v0.5.1 has been released.",
+        "bullets": [
+          "Add Item Detail Sheet. You can press thumbnails to see details.",
+          "Fix long press to select a range not working in explorer.",
+          "Improve dialogs and other styles."
+        ],
+        "foot": "",
+        "time": "2025-01-10"
+      },
       "0.5.0": {
         "head": "tiShare v0.5.0 has been released. It contains the following updates.",
         "bullets": [
