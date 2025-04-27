@@ -117,6 +117,15 @@
       }
     },
     "mobile": {
+      "0.5.2": {
+        "head": "tiShare v0.5.2 has been released.",
+        "bullets": [
+          "Minimize app size.",
+          "Improve file explorer UX."
+        ],
+        "foot": "",
+        "time": "2025-04-27"
+      },
       "0.5.1": {
         "head": "tiShare v0.5.1 has been released.",
         "bullets": [
