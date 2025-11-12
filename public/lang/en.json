@@ -130,6 +130,15 @@
       }
     },
     "mobile": {
+      "0.5.4": {
+        "head": "tiShare v0.5.4 has been released.",
+        "bullets": [
+          "Fix status bar overlap on Android 15 devices.",
+          "Fix network error when requested to send files."
+        ],
+        "foot": "",
+        "time": "2025-11-11"
+      },
       "0.5.3": {
         "head": "tiShare v0.5.3 has been released.",
         "bullets": [
