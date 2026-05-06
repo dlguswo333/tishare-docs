@@ -52,7 +52,7 @@ function Home () {
               </div>
             </div>
             <div>
-              <a href='https://play.google.com/store/apps/details?id=com.dlguswo333.tishare_mobile'>Android</a>
+              <a href='https://apkpure.com/p/com.dlguswo333.tishare_mobile'>Android</a>
               <div>
                 <img src='/tishare-docs/android.svg' alt='android' />
               </div>

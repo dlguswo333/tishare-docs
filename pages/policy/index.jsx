@@ -37,9 +37,14 @@ export default function Policy () {
           Link to the privacy policy of third-party service providers used
           by the app
         </p>
-        <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">
+        <ul>
+          <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">
           Google Play Services
-        </a></li></ul>
+          </a></li>
+          <li><a href="https://apkpure.com/privacy-policy.html" target="_blank" rel="noopener noreferrer">
+          Apkpure
+          </a></li>
+        </ul>
       </div>
       <p>
         <strong>Log Data</strong>
