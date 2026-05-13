@@ -6,7 +6,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Faq () {
-  const [t,] = useTranslation();
+  const [t] = useTranslation();
 
   function getItems () {
     const ret = [];
