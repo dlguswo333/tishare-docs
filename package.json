@@ -25,7 +25,8 @@
     "build": "next build",
     "dev": "next dev",
     "test": "next test",
-    "export": "next export"
+    "export": "next export",
+    "lint": "eslint"
   },
   "browserslist": {
     "production": [
@@ -40,7 +41,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.50.0",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.6",
+    "eslint-plugin-react": "^7.37.5"
   }
 }
