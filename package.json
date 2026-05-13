@@ -26,7 +26,8 @@
     "dev": "next dev",
     "test": "next test",
     "export": "next export",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prepare": "husky"
   },
   "browserslist": {
     "production": [
@@ -43,6 +44,7 @@
   "devDependencies": {
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.6",
-    "eslint-plugin-react": "^7.37.5"
+    "eslint-plugin-react": "^7.37.5",
+    "husky": "^9.1.7"
   }
 }
