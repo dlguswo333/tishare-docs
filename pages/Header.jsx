@@ -25,7 +25,7 @@ function Header ({lang, setLang}) {
       localStorage.removeItem('preferredLang');
       setLang('en');
     }
-  }, [i18n.languages, setLang]);
+  }, [i18n, setLang]);
 
   // Update language settings on select.
   useEffect(() => {
