@@ -38,7 +38,6 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
-      - run: npm run export
       - name: Create .nojekyll
         shell: bash
         run: touch out/.nojekyll
