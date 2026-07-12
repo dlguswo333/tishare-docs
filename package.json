@@ -25,7 +25,6 @@
     "build": "next build",
     "dev": "next dev",
     "test": "next test",
-    "export": "next export",
     "lint": "eslint",
     "prepare": "husky"
   },
