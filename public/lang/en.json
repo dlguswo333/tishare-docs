@@ -130,6 +130,15 @@
       }
     },
     "mobile": {
+      "0.5.5": {
+        "head": "tiShare v0.5.4 has been released.",
+        "bullets": [
+          "Show or hide hidden files on Explorer.",
+          "Fix unreadable status bar due to wrong color in light theme."
+        ],
+        "foot": "",
+        "time": "2026-07-13"
+      },
       "0.5.4": {
         "head": "tiShare v0.5.4 has been released.",
         "bullets": [
