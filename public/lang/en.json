@@ -130,6 +130,14 @@
       }
     },
     "mobile": {
+      "0.5.6": {
+        "head": "tiShare v0.5.6 is out.",
+        "bullets": [
+          "Update SDK version.",
+        ],
+        "foot": "",
+        "time": "2026-07-27"
+      },
       "0.5.5": {
         "head": "tiShare v0.5.4 has been released.",
         "bullets": [
