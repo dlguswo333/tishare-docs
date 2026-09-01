@@ -15,6 +15,16 @@
   },
   "releases": {
     "desktop": {
+      "0.6.0": {
+        "head": "tiShare Desktop v0.6.0 is out.",
+        "bullets": [
+          "Secure file sharing is live! Files are encrypted on the networks.",
+          "Due to file sharing mechanism changes, the minimum compatible version is now v0.6.0.",
+          "Improve app stability."
+        ],
+        "foot": "",
+        "time": "2025-09-01"
+      },
       "0.5.2": {
         "head": "tiShare Desktop v0.5.2 has been released.",
         "bullets": [
@@ -130,6 +140,18 @@
       }
     },
     "mobile": {
+      "0.6.0": {
+        "head": "tiShare Mobile v0.6.0 is out.",
+        "bullets": [
+          "Secure file sharing is live! Files are encrypted on the networks.",
+          "Due to file sharing mechanism changes, the minimum compatible version is now v0.6.0.",
+          "Raise the minimum supported version to Android R.",
+          "Improve Explorer performance.",
+          "Improve app stability."
+        ],
+        "foot": "",
+        "time": "2026-09-01"
+      },
       "0.5.6": {
         "head": "tiShare v0.5.6 is out.",
         "bullets": [
