@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.2.6",
     "eslint-plugin-react": "^7.37.5",
