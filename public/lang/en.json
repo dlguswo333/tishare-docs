@@ -315,7 +315,7 @@
       },
       "2": {
         "title": "Is it secure to use tiShare in public networks?",
-        "body": "Sadly, no. tiShare is running without any server, so you can use tiShare without worrying about getting the service shut down due to server maintenance costs. However, in return, we are not able to provide resources such as SSL keys to users to encrypt files flying on the networks. We do not recommend and do not take responsibility using tiShare in public and untrusted networks: such as coffee shop Wi-Fi routers. Use tiShare only in networks with trust like your home Wi-Fi networks."
+        "body": "Yes, but you should use v0.6.0 or higher. That is the first version that shares files using TLS, a widely adopted cryptographic protocol that provides data security over the networks.<br>However, to mitigate impersonation attacks, check if the fingerprint of the other on your screen actually matches that of the other device. We do not recommend and do not take responsibility using tiShare versions below v0.6.0 in public and untrusted networks, such as coffee shop Wi-Fi routers. For security, please update your tiShare apps."
       },
       "3": {
         "title": "How can I communicate with another device?",
