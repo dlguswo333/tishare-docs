@@ -1,16 +1,17 @@
 import {defineConfig, globalIgnores} from 'eslint/config';
 import nextPlugin from 'eslint-config-next';
+import stylistic from '@stylistic/eslint-plugin';
 
 /** @type {import('eslint').Linter.Config.RulesRecord} */
 const globalRules = {
-  indent: ['error', 2],
-  quotes: ['error', 'single'],
-  semi: ['error', 'always'],
-  'space-infix-ops': 'error',
-  'keyword-spacing': 'error',
-  'eol-last': 'error',
+  '@stylistic/indent': ['error', 2],
+  '@stylistic/quotes': ['error', 'single'],
+  '@stylistic/semi': ['error', 'always'],
+  '@stylistic/space-infix-ops': 'error',
+  '@stylistic/keyword-spacing': 'error',
+  '@stylistic/eol-last': 'error',
 
-  'comma-dangle': ['error', {
+  '@stylistic/comma-dangle': ['error', {
     arrays: 'never',
     objects: 'only-multiline',
     imports: 'never',
@@ -18,10 +19,10 @@ const globalRules = {
     functions: 'never',
   }],
 
-  'object-curly-spacing': 'error',
-  'space-before-function-paren': ['error', 'always'],
-  'space-before-blocks': ['error', 'always'],
-  'arrow-spacing': 'error',
+  '@stylistic/object-curly-spacing': 'error',
+  '@stylistic/space-before-function-paren': ['error', 'always'],
+  '@stylistic/space-before-blocks': ['error', 'always'],
+  '@stylistic/arrow-spacing': 'error',
 };
 
 export default defineConfig([
@@ -30,6 +31,7 @@ export default defineConfig([
     files: ['**/*.{js,jsx}'],
     plugins: {
       next: nextPlugin,
+      '@stylistic': stylistic,
     },
     languageOptions: {
       parserOptions: {
