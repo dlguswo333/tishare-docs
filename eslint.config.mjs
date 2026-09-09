@@ -1,6 +1,7 @@
 import {defineConfig, globalIgnores} from 'eslint/config';
 import nextPlugin from 'eslint-config-next';
 import stylistic from '@stylistic/eslint-plugin';
+import json from '@eslint/json';
 
 /** @type {import('eslint').Linter.Config.RulesRecord} */
 const globalRules = {
@@ -43,6 +44,15 @@ export default defineConfig([
     rules: {
       ...globalRules,
     },
+  },
+  {
+    files: ['**/*.json'],
+    plugins: {
+      json,
+    },
+    language: 'json/json',
+    extends: ['json/recommended'],
+    ignores: ['package-lock.json'],
   },
   globalIgnores([
     // Default ignores of eslint-config-next:
