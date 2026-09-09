@@ -18,7 +18,7 @@
       "0.6.1": {
         "head": "tiShare Desktop v0.6.1 is out.",
         "bullets": [
-          "Fix a bug where the app does not start due to missing modules.",
+          "Fix a bug where the app does not start due to missing modules."
         ],
         "foot": "",
         "time": "2025-09-04"
