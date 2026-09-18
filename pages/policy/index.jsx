@@ -39,10 +39,10 @@ export default function Policy () {
         </p>
         <ul>
           <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">
-          Google Play Services
+            Google Play Services
           </a></li>
           <li><a href="https://apkpure.com/privacy-policy.html" target="_blank" rel="noopener noreferrer">
-          Apkpure
+            Apkpure
           </a></li>
         </ul>
       </div>

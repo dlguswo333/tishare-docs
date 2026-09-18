@@ -1,5 +1,5 @@
 import classes from './Faq.module.scss';
-import {useTranslation} from 'react-i18next';
+import {Trans, useTranslation} from 'react-i18next';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -21,7 +21,10 @@ function Faq () {
           </AccordionSummary>
           <AccordionDetails className={classes.ItemBody}>
             <span className={classes.ItemBody}>
-              {t('faq.items.' + i + '.body')}
+              <Trans
+                defaults={t('faq.items.' + i + '.body')}
+                components={{br: <br />}}
+              />
             </span>
           </AccordionDetails>
         </Accordion>
